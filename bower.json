@@ -1,0 +1,8 @@
+{
+    "name":  "radders",
+    "version": "16.0.0",
+    "dependencies": {
+        "foundation": "latest",
+        "foundation-icon-fonts": "latest"
+    }
+}

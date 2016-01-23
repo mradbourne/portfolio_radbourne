@@ -1,0 +1,9 @@
+!= partial("../_shared/opening")
+.row
+  article.large-12.columns
+    != yield
+    != partial("../_shared/blog-nav")
+if disqus
+  .comments
+    .container
+      != partial("../_shared/comments")

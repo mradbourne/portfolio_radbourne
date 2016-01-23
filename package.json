@@ -1,0 +1,27 @@
+{
+  "name": "radders",
+  "version": "16.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://mradbourne@bitbucket.org/mradbourne/radbourne_v16.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-parallel": "^0.4.1",
+    "grunt-shell": "^1.1.2"
+  },
+  "dependencies": {
+    "harp": "*",
+    "bower": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install"
+  }
+}

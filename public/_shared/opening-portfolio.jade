@@ -1,0 +1,10 @@
+.row
+  .large-12.columns.opening(class="#{ published === false ? 'post-unpublished' : '' }")
+    a(href=".").opening-return &lt; Portfolio
+    if title
+      h1.opening-title(class="#{ title.length > 30 ? 'opening-title--long' : '' }")!= title
+.row
+  for image in public.YAsupATebrEFRAcr7k6recHA4aphu6ra.images._contents
+    if image === current.path[1] + (".jpg" || ".png" || ".svg" || ".gif")
+      .opening-image-container
+        img.opening-image(src="/YAsupATebrEFRAcr7k6recHA4aphu6ra/images/#{ image }", alt="")

@@ -1,0 +1,18 @@
+@keyframes fadeIn {
+  0% {
+    // margin-top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    // margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.main {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}

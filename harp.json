@@ -1,0 +1,7 @@
+{
+  "globals": {
+    "typekit": false,
+    "analytics": true,
+    "disqus": false
+  }
+}

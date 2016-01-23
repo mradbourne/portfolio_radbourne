@@ -1,0 +1,11 @@
+.row
+  .large-12.columns.opening(class="#{ published === false ? 'post-unpublished' : '' }")
+    a(href=".").opening-return &lt; Blog list
+    for image in public.images._contents
+      if image === current.path[1] + (".jpg" || ".png" || ".svg" || ".gif")
+        img.opening-image(src="/images/#{ image }", alt="")
+    if title
+      h1.opening-title(class="#{ title.length > 30 ? 'opening-title--long' : '' }")!= title
+    if date
+      time.opening-time(datetime="#{ date }")
+        != date

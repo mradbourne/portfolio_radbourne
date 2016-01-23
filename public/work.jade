@@ -1,0 +1,78 @@
+.row
+  article.large-12.columns
+    h1 Work
+
+    .pre-login
+      .row
+        .large-12.columns
+          .button.login-btn
+            i.fi-lock View my portfolio
+    .login.hidden.bulletin
+      .row
+        .large-12.columns
+          i.fi-x-circle.login-cancel-btn
+          h2 Please log in
+      .row
+        .medium-6.columns
+          form(id='form1', action='javascript://', onsubmit='return authPass(this.user.value,this.pass.value)')
+            input(type='text', name='user', placeholder='Username')
+            input(type='text', name='pass', placeholder='Password')
+            input.button(type='submit', value='Login')
+            span#login-error
+        .medium-6.columns Sorry about this! A lot of my work (including non-NDA projects) is commercially sensitive so I can't show it to everyone. If you would like access, please #[a(href='/email-me') drop me an email].
+
+    h2 What I do
+    p I use these kinds of activities to make outstanding digital experiences:
+    .row
+      .medium-6.columns
+        h3 Discovery
+        ul
+          li User and stakeholder research
+          li Task analysis
+          li Persona creation
+          li Heuristic-based expert reviews and competitor analysis
+      .medium-6.columns
+        h3 Concepting
+        ul
+          li Design concepts
+          li Scenario and journey analysis
+          li User flow creation
+          li Storyboarding
+    .row
+      .medium-6.columns
+        h3 Design
+        ul
+          li Information architecture (IA)
+          li Interaction design
+          li Interface design (UI design)
+          li Visual design
+      .medium-6.columns
+        h3 Build
+        ul
+          li Websites and pattern libraries
+          li Digital prototypes
+          li Wireframes
+          li Functional specifications
+
+    h2#clients Who I work with
+    p I have worked with clients such as:
+    ul
+      li Autoglass
+      li Aviva
+      li First Direct
+      li Google
+      li Hoseasons
+      li HSBC
+      li Lloyds Bank
+      li Legal &amp; General
+      li National newspapers
+      li Nationwide Building Society
+      li Santander
+      li Shell
+      li Sony
+      li TD Direct Investing
+      li TSB
+        li Unilever
+
+    h2 Get in touch
+    p If you would like to talk to me about work or project opportunities, please #[a(href='/email-me') drop me an email].
