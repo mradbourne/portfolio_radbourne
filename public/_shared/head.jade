@@ -1,3 +1,5 @@
+- var site = {"baseurl": "http://files.radbourne.me/examples/radbourne"}
+
 meta(charset="utf-8")
 title #{ current.path[0] == 'index' ? 'Matt Radbourne - UX Designer' : title + ' | Matt Radbourne - UX Designer' }
 meta(name="description", content="#{ description }")
@@ -7,4 +9,4 @@ meta(name="mobileoptimized", content="320")
 meta(name="viewport", content="width=device-width, initial-scale=1.0")
 meta(http-equiv="cleartype", content="on")
 meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-link(rel="stylesheet", href="/css/app.css")
+link(rel="stylesheet", href="#{site.baseurl}/css/app.css")
