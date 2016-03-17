@@ -1,10 +1,13 @@
+- var site = {"baseurl": "http://files.radbourne.me/examples/radbourne"}
+//- Also in header.jade and footer.jade
+
 header.row
   .large-12.columns
     .title
       a(href="/") Matt Radbourne 
         span.subtitle UX Designer
     nav
-      a(href="/", class="#{ current.path[0] == 'index' ? 'active' : '' }") Hello
-      a(href="/work", class="#{ current.path[0] == 'work' ? 'active' : '' }") Work
-      a(href="/blog", class="#{ current.path[0] == 'blog' ? 'active' : '' }") Blog
-      a(href="/speaking", class="#{ current.path[0] == 'speaking' ? 'active' : '' }") Speaking
+      a(href="#{site.baseurl}/", class="#{ current.path[0] == 'index' ? 'active' : '' }") Hello
+      a(href="#{site.baseurl}/work", class="#{ current.path[0] == 'work' ? 'active' : '' }") Work
+      a(href="#{site.baseurl}/blog", class="#{ current.path[0] == 'blog' ? 'active' : '' }") Blog
+      a(href="#{site.baseurl}/speaking", class="#{ current.path[0] == 'speaking' ? 'active' : '' }") Speaking
